@@ -8,7 +8,7 @@ info:
     email: support@noomi.com...
 host: api.dev.noomi.com
 basePath: /v1
-tags:
+version tags:
   - name: organisations
   - name: sites
   - name: units
