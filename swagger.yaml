@@ -1,14 +1,14 @@
 swagger: "2.0"
 info:
   description: This is a Noomi API.
-  version: 0.0.2
+  version: 0.0.3
   title: Noomi API
   termsOfService: http://noomi.com/api/terms/
   contact:
     email: support@noomi.com...
 host: api.dev.noomi.com
 basePath: /v1
-version tags:
+version  tags:
   - name: organisations
   - name: sites
   - name: units
