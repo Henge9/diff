@@ -5,7 +5,7 @@ info:
   title: Noomi API
   termsOfService: http://noomi.com/api/terms/
   contact:
-    email: support@noomi.com
+    email: support@noomi.com...
 host: api.dev.noomi.com
 basePath: /v1
 tags:
