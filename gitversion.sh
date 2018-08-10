@@ -9,7 +9,6 @@ main() {
 	else
 		echo "exit 0"
 	fi
-
 }
 main $@
 exit $?
