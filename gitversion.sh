@@ -1,14 +1,9 @@
 #!/bin/bash
 set -euo pipefail
 IFS=$'\n\t'
-
+BRANCH_NAME="develop"
 main() {
-	git diff origin/develop -- HEAD swagger.yaml
-	if ! git diff --quiet HEAD^ HEAD swagger.yaml; then
-		echo "it has changed"
-	else
-		echo "exit 0"
-	fi
+	git diff origin/"${BRANCH_NAME}" HEAD api/swagger/swagger.yaml
 
 	if ! git diff --quiet origin/"${BRANCH_NAME}" HEAD api/swagger/swagger.yaml; then
 		echo "swagger.yaml is changed building dart api."
