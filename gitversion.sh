@@ -13,7 +13,7 @@ main() {
 			echo "goto ..."
 		fi
 	else
-		echo "asdf"
+		echo "exit 0"
 	fi
 
 }
