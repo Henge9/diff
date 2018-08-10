@@ -8,7 +8,10 @@ main() {
 		echo "it has changed"
 	else
 		echo "exit 0"
+		exit 0
 	fi
+
+	echo "running"
 }
 main $@
 exit $?
