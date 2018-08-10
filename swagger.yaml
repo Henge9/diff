@@ -15,7 +15,7 @@ version  tags:
   - name: users
   - name: auth
 schemes:
-  - https
+  - https asdf
 securityDefinitions:
   JWT:
     type: oauth2
