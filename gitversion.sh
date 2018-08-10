@@ -4,7 +4,7 @@ IFS=$'\n\t'
 
 main() {
 	git diff HEAD^ HEAD swagger.yaml
-	if ! git diff --quiet HEAD^ HEAD swagger.yaml; then
+	if git diff --quiet HEAD^ HEAD swagger.yaml[; then
 		echo "it has changed"
 	else
 		echo "exit 0"
