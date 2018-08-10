@@ -2,12 +2,12 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-function main() {
-	git diff HEAD^ HEAD swagger.yaml | grep version: | versionHunter
+main() {
+	git diff HEAD^ HEAD swagger.yaml | versionHunter $@
 }
-function versionHunter() {
+versionHunter() {
 	echo "Hello"
-
+	echo $1
 }
 main $@
 exit $?
