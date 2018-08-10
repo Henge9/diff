@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
   description: This is a Noomi API.
-  version: 0.0.4 
+  version: 0.0.4
   title: Noomi API
   termsOfService: http://noomi.com/api/terms/
   contact:
