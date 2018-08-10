@@ -3,11 +3,13 @@ set -euo pipefail
 IFS=$'\n\t'
 
 main() {
-	git diff HEAD^ HEAD swagger.yaml | versionHunter $@
-}
-versionHunter() {
-	echo "Hello"
-	echo $1
+	git diff HEAD^ HEAD swagger.yaml
+	if ! git diff --quiet HEAD^ HEAD swagger.yaml; then
+		echo "it has changed"
+	else
+		echo "asdf"
+	fi
+
 }
 main $@
 exit $?
