@@ -12,7 +12,7 @@ main() {
 		exit 0
 	fi
 
-	echo "running"
+	echo "running?"
 }
 main $@
 exit $?
