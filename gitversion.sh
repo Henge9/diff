@@ -13,7 +13,7 @@ main() {
 		exit 0
 	fi
 
-	echo "running asdf"
+	echo "running!"
 }
 main $@
 exit $?
