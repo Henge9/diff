@@ -3,6 +3,7 @@ set -euo pipefail
 IFS=$'\n\t'
 BRANCH_NAME="develop"
 main() {
+	git show :/^Merge
 	git show HEAD --name-only --oneline
 
 	if [[ $(git show HEAD --name-only --oneline | grep -q api/swagger/swagger.yaml) || $? -eq 0 ]]; then
@@ -12,7 +13,7 @@ main() {
 		exit 0
 	fi
 
-	echo "running"
+	echo "running asdf"
 }
 main $@
 exit $?
