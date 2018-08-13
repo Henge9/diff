@@ -3,7 +3,7 @@ set -euo pipefail
 IFS=$'\n\t'
 BRANCH_NAME="develop"
 main() {
-	git show HEAD
+	git show HEAD --name-only
 	if [[ $(git show HEAD --name-only --oneline | grep -q api/swagger/swagger.yaml) || $? -eq 0 ]]; then
 		echo "swagger.yaml is changed building dart api."
 	else
