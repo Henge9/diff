@@ -4,7 +4,6 @@ IFS=$'\n\t'
 BRANCH_NAME="develop"
 main() {
 	git show HEAD
-
 	if [[ $(git show HEAD --name-only --oneline | grep -q api/swagger/swagger.yaml) || $? -eq 0 ]]; then
 		echo "swagger.yaml is changed building dart api."
 	else
